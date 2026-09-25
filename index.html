@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encargo 3 - Diseño desde el Código</title>
+
+    <!-- Hoja de estilos que crearemos después -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <p>Diseño desde el Código</p>
+        <h1>Encargo 3</h1>
+        <p>Análisis de diagramación de un sitio y una plataforma web</p>
+    </header>
+
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="#sitio">Sitio web</a>
+        <a href="#plataforma">Plataforma web</a>
+        <a href="#comparacion">Comparación</a>
+    </nav>
+
+
+    <main>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="introduccion">
+
+            <h2>Análisis de diagramación web</h2>
+
+            <p>
+                En este encargo se analiza la diagramación y navegación de
+                un sitio web y una plataforma web, observando su comportamiento
+                en escritorio y dispositivos móviles.
+            </p>
+
+            <p>
+                El sitio seleccionado es la página de la Municipalidad de La Serena,
+                mientras que la plataforma seleccionada es GitHub.
+            </p>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- SITIO WEB -->
+        <!-- ================================================== -->
+
+        <section id="sitio" class="caso">
+
+            <header class="titulo-caso">
+                <p>01 — Sitio web</p>
+
+                <h2>Municipalidad de La Serena</h2>
+
+                <a href="https://laserena.cl/" target="_blank">
+                    laserena.cl
+                </a>
+            </header>
+
+
+            <!-- CAPTURA PRINCIPAL -->
+            <figure class="captura">
+                <img
+                    src="img/laserena-escritorio.png"
+                    alt="Página de la Municipalidad de La Serena en versión de escritorio"
+                >
+
+                <figcaption>
+                    Página principal de la Municipalidad de La Serena en escritorio.
+                </figcaption>
+            </figure>
+
+
+            <!-- PREGUNTA 1 -->
+            <article class="pregunta">
+
+                <h3>
+                    1. ¿Qué partes de la pantalla se mueven y cuáles quedan fijas al hacer scroll?
+                </h3>
+
+                <p>
+                    La navegación del sitio se desarrolla principalmente de forma
+                    vertical. Los banners, accesos a servicios, noticias y distintas
+                    secciones avanzan junto con el scroll y forman parte del flujo
+                    normal de la página.
+                </p>
+
+                <p>
+                    No existe una barra lateral permanente que acompañe al usuario
+                    durante todo el recorrido. La navegación depende principalmente
+                    del encabezado y del menú superior, mientras que el resto del
+                    contenido se presenta de manera sucesiva hacia abajo.
+                </p>
+
+            </article>
+
+
+            <!-- PREGUNTA 2 -->
+            <article class="pregunta">
+
+                <h3>
+                    2. ¿Cómo se distribuyen las columnas?
+                </h3>
+
+                <p>
+                    En escritorio, el sitio no mantiene una única distribución de
+                    columnas. Algunas secciones ocupan gran parte del ancho disponible,
+                    mientras que otras utilizan grupos de elementos organizados en
+                    varias columnas.
+                </p>
+
+                <p>
+                    La página funciona mediante un contenedor principal que cambia
+                    su distribución interna dependiendo del tipo de información que
+                    necesita presentar.
+                </p>
+
+                <div class="diagrama">
+                    <p>Header</p>
+                    <p>Banner o contenido principal</p>
+
+                    <div class="columnas">
+                        <p>Bloque 1</p>
+                        <p>Bloque 2</p>
+                        <p>Bloque 3</p>
+                    </div>
+
+                    <p>Otras secciones</p>
+                    <p>Footer</p>
+                </div>
+
+            </article>
+
+
+            <!-- PREGUNTA 3 -->
+            <article class="pregunta">
+
+                <h3>
+                    3. ¿Cómo reacciona el layout cuando la pantalla se reduce al tamaño móvil?
+                </h3>
+
+                <p>
+                    Al reducir el tamaño de la pantalla, la diagramación se simplifica.
+                    Los elementos que se encuentran distribuidos horizontalmente pasan
+                    a utilizar menos columnas o se organizan de manera vertical.
+                </p>
+
+                <p>
+                    La navegación superior también se vuelve más compacta y las
+                    imágenes se ajustan al ancho disponible.
+                </p>
+
+
+                <div class="comparacion-pantallas">
+
+                    <figure>
+                        <img
+                            src="img/laserena-escritorio.png"
+                            alt="La Serena en escritorio"
+                        >
+
+                        <figcaption>Escritorio</figcaption>
+                    </figure>
+
+
+                    <figure>
+                        <img
+                            src="img/laserena-movil.png"
+                            alt="La Serena en dispositivo móvil"
+                        >
+
+                        <figcaption>Móvil</figcaption>
+                    </figure>
+
+                </div>
+
+            </article>
+
+
+            <!-- PREGUNTA 4 -->
+            <article class="pregunta">
+
+                <h3>
+                    4. ¿Nos parecen apropiadas las decisiones tomadas? ¿Haríamos algún ajuste?
+                </h3>
+
+                <p>
+                    En general, las decisiones son apropiadas para un sitio municipal,
+                    ya que permiten presentar una gran cantidad de información y
+                    servicios mediante diferentes bloques.
+                </p>
+
+                <p>
+                    Como ajuste, simplificaríamos la cantidad de elementos que compiten
+                    simultáneamente por la atención y daríamos mayor protagonismo a los
+                    servicios o trámites utilizados con mayor frecuencia.
+                </p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================================================== -->
+        <!-- PLATAFORMA WEB -->
+        <!-- ================================================== -->
+
+        <section id="plataforma" class="caso">
+
+            <header class="titulo-caso">
+                <p>02 — Plataforma web</p>
+
+                <h2>GitHub</h2>
+
+                <a href="https://github.com/" target="_blank">
+                    github.com
+                </a>
+            </header>
+
+
+            <!-- CAPTURA PRINCIPAL -->
+            <figure class="captura">
+                <img
+                    src="img/github-escritorio.png"
+                    alt="Repositorio de GitHub en versión de escritorio"
+                >
+
+                <figcaption>
+                    Vista de un repositorio de GitHub en escritorio.
+                </figcaption>
+            </figure>
+
+
+            <!-- PREGUNTA 1 -->
+            <article class="pregunta">
+
+                <h3>
+                    1. ¿Qué partes de la pantalla se mueven y cuáles quedan fijas al hacer scroll?
+                </h3>
+
+                <p>
+                    En GitHub, el contenido principal del repositorio se desplaza
+                    verticalmente. Dentro de esta área se encuentran los archivos,
+                    carpetas, historial y documentación del proyecto.
+                </p>
+
+                <p>
+                    La plataforma separa claramente la navegación global de GitHub,
+                    la navegación correspondiente al repositorio y el contenido
+                    principal.
+                </p>
+
+                <p>
+                    Esta organización ayuda a que el usuario pueda reconocer en qué
+                    repositorio se encuentra y qué acciones puede realizar dentro de él.
+                </p>
+
+            </article>
+
+
+            <!-- PREGUNTA 2 -->
+            <article class="pregunta">
+
+                <h3>
+                    2. ¿Cómo se distribuyen las columnas?
+                </h3>
+
+                <p>
+                    En escritorio, una página de repositorio utiliza principalmente
+                    dos áreas. La primera corresponde al contenido principal y ocupa
+                    la mayor parte del espacio. La segunda funciona como una columna
+                    secundaria con información complementaria.
+                </p>
+
+
+                <div class="diagrama">
+
+                    <p>Navegación global</p>
+
+                    <p>Navegación del repositorio</p>
+
+                    <div class="columnas">
+                        <p>Contenido principal</p>
+                        <p>Información secundaria</p>
+                    </div>
+
+                </div>
+
+
+                <p>
+                    La jerarquía espacial favorece al área de trabajo, mientras que
+                    información como la descripción, lenguajes o datos secundarios
+                    ocupa menos espacio.
+                </p>
+
+            </article>
+
+
+            <!-- PREGUNTA 3 -->
+            <article class="pregunta">
+
+                <h3>
+                    3. ¿Cómo reacciona el layout cuando la pantalla se reduce al tamaño móvil?
+                </h3>
+
+                <p>
+                    Al reducir el ancho de la pantalla, GitHub transforma su estructura
+                    de varias columnas en una distribución principalmente vertical.
+                </p>
+
+                <p>
+                    El contenido principal adquiere prioridad y ocupa prácticamente
+                    todo el ancho disponible. La información secundaria se reorganiza
+                    y algunos elementos de navegación se compactan.
+                </p>
+
+
+                <div class="comparacion-pantallas">
+
+                    <figure>
+                        <img
+                            src="img/github-escritorio.png"
+                            alt="GitHub en escritorio"
+                        >
+
+                        <figcaption>Escritorio</figcaption>
+                    </figure>
+
+
+                    <figure>
+                        <img
+                            src="img/github-movil.png"
+                            alt="GitHub en dispositivo móvil"
+                        >
+
+                        <figcaption>Móvil</figcaption>
+                    </figure>
+
+                </div>
+
+            </article>
+
+
+            <!-- PREGUNTA 4 -->
+            <article class="pregunta">
+
+                <h3>
+                    4. ¿Nos parecen apropiadas las decisiones tomadas? ¿Haríamos algún ajuste?
+                </h3>
+
+                <p>
+                    Las decisiones tomadas por GitHub son apropiadas para una plataforma
+                    de trabajo. El contenido principal recibe una mayor cantidad de
+                    espacio porque contiene los archivos y las acciones más importantes.
+                </p>
+
+                <p>
+                    En móvil también es apropiado que la información secundaria pierda
+                    protagonismo para favorecer el área principal.
+                </p>
+
+                <p>
+                    Como ajuste, podría simplificarse la cantidad de opciones visibles
+                    para usuarios nuevos, ya que la gran cantidad de herramientas y
+                    categorías puede dificultar inicialmente la comprensión de la
+                    plataforma.
+                </p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================================================== -->
+        <!-- COMPARACIÓN -->
+        <!-- ================================================== -->
+
+        <section id="comparacion" class="comparacion">
+
+            <h2>Comparación</h2>
+
+            <p>
+                La principal diferencia entre ambos casos se encuentra en el propósito
+                de sus interfaces. La Serena organiza información para que sea
+                consultada y recorrida, mientras que GitHub organiza herramientas
+                para que el usuario pueda trabajar dentro de la plataforma.
+            </p>
+
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>La Serena</th>
+                        <th>GitHub</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th>Tipo</th>
+                        <td>Sitio institucional</td>
+                        <td>Plataforma web</td>
+                    </tr>
+
+                    <tr>
+                        <th>Objetivo</th>
+                        <td>Consultar información y servicios</td>
+                        <td>Trabajar y gestionar proyectos</td>
+                    </tr>
+
+                    <tr>
+                        <th>Diagramación</th>
+                        <td>Bloques y retículas variables</td>
+                        <td>Área principal y columna secundaria</td>
+                    </tr>
+
+                    <tr>
+                        <th>Navegación</th>
+                        <td>Orientada a encontrar información</td>
+                        <td>Orientada a herramientas y acciones</td>
+                    </tr>
+
+                    <tr>
+                        <th>Versión móvil</th>
+                        <td>Los bloques se reorganizan verticalmente</td>
+                        <td>Se prioriza el contenido principal</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <p>
+                De esta manera, ambas interfaces adaptan su diagramación de acuerdo
+                con las acciones que esperan de sus usuarios. El sitio municipal
+                prioriza la consulta de información, mientras que GitHub prioriza
+                la interacción continua con herramientas y contenidos.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+
+        <p>
+            Encargo 3 — Diseño desde el Código
+        </p>
+
+        <p>
+            Fabián Flores — 2026
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1262 @@
+/* ========================================
+   AJUSTES GENERALES
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ========================================
+   ENCABEZADO
+======================================== */
+
+.encabezado {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.encabezado h1 {
+    margin: 0.5rem 0;
+    font-size: 3rem;
+}
+
+.encabezado p {
+    margin: 0.25rem 0;
+}
+
+
+/* ========================================
+   NAVEGACIÓN
+======================================== */
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 1rem 2rem;
+
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navegacion a {
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   CONTENIDO PRINCIPAL
+======================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   INTRODUCCIÓN
+======================================== */
+
+.introduccion {
+    max-width: 750px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.introduccion h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ========================================
+   CASOS DE ESTUDIO
+======================================== */
+
+.caso {
+    margin-bottom: 7rem;
+}
+
+.titulo-caso {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+
+    border-bottom: 2px solid #222;
+}
+
+.titulo-caso p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.titulo-caso h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.titulo-caso a {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+
+/* ========================================
+   CAPTURAS
+======================================== */
+
+.captura {
+    margin: 2rem 0 4rem;
+}
+
+.captura img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+/* ========================================
+   PREGUNTAS
+======================================== */
+
+.pregunta {
+    margin-bottom: 4rem;
+}
+
+.pregunta h3 {
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.pregunta p {
+    max-width: 750px;
+}
+
+
+/* ========================================
+   DIAGRAMAS
+======================================== */
+
+.diagrama {
+    display: grid;
+    gap: 1rem;
+
+    margin: 2rem 0;
+    padding: 2rem;
+
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.diagrama > p {
+    margin: 0;
+    padding: 1rem;
+
+    text-align: center;
+
+    border: 1px solid #aaa;
+}
+
+
+/* ========================================
+   COLUMNAS
+======================================== */
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.columnas p {
+    margin: 0;
+    padding: 2rem 1rem;
+
+    text-align: center;
+
+    border: 1px solid #aaa;
+}
+
+
+/* ========================================
+   COMPARACIÓN ESCRITORIO / MÓVIL
+======================================== */
+
+.comparacion-pantallas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+
+    margin-top: 2rem;
+
+    align-items: start;
+}
+
+.comparacion-pantallas figure {
+    margin: 0;
+}
+
+.comparacion-pantallas img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+
+/* ========================================
+   COMPARACIÓN FINAL
+======================================== */
+
+.comparacion {
+    margin-bottom: 6rem;
+}
+
+.comparacion h2 {
+    font-size: 2.5rem;
+}
+
+.comparacion > p {
+    max-width: 750px;
+}
+
+/* ========================================
+   VARIABLES
+======================================== */
+
+:root {
+    --fondo: #f4f6f8;
+    --fondo-claro: #ffffff;
+
+    --texto: #172033;
+    --texto-secundario: #667085;
+
+    --azul: #123c69;
+    --azul-oscuro: #0b2545;
+    --celeste: #3fa9f5;
+    --celeste-suave: #eaf6ff;
+
+    --borde: #dce3ea;
+
+    --radio: 18px;
+    --radio-pequeno: 10px;
+
+    --sombra:
+        0 10px 30px rgba(24, 39, 75, 0.08);
+
+    --sombra-hover:
+        0 18px 45px rgba(24, 39, 75, 0.14);
+
+    --ancho-contenido: 1180px;
+}
+
+
+/* ========================================
+   RESET Y AJUSTES GENERALES
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.7;
+
+    color: var(--texto);
+    background-color: var(--fondo);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+::selection {
+    background-color: var(--celeste);
+    color: white;
+}
+
+
+/* ========================================
+   ENCABEZADO / HERO
+======================================== */
+
+.encabezado {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 430px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 6rem 2rem;
+
+    text-align: center;
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(63, 169, 245, 0.35),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(95, 211, 255, 0.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            var(--azul-oscuro),
+            var(--azul)
+        );
+}
+
+.encabezado::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    pointer-events: none;
+}
+
+.encabezado > * {
+    position: relative;
+    z-index: 1;
+}
+
+.encabezado > p:first-child {
+    margin: 0 0 1rem;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    color: #bfe4ff;
+}
+
+.encabezado h1 {
+    margin: 0;
+
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.95;
+
+    letter-spacing: -0.05em;
+}
+
+.encabezado > p:last-child {
+    max-width: 620px;
+
+    margin: 1.5rem auto 0;
+
+    font-size: clamp(1rem, 2vw, 1.25rem);
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* ========================================
+   NAVEGACIÓN
+======================================== */
+
+.navegacion {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.8rem 2rem;
+
+    background-color: rgba(255, 255, 255, 0.88);
+
+    border-bottom: 1px solid rgba(220, 227, 234, 0.8);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.navegacion a {
+    padding: 0.55rem 1rem;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    color: var(--texto);
+
+    text-decoration: none;
+
+    border-radius: 999px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.navegacion a:hover {
+    color: white;
+    background-color: var(--azul);
+
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   CONTENIDO GENERAL
+======================================== */
+
+main {
+    width: min(92%, var(--ancho-contenido));
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   INTRODUCCIÓN
+======================================== */
+
+.introduccion {
+    position: relative;
+
+    max-width: 800px;
+
+    margin: 7rem auto;
+
+    text-align: center;
+}
+
+.introduccion::before {
+    content: "ANÁLISIS";
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    padding: 0.4rem 0.8rem;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    color: var(--azul);
+
+    background-color: var(--celeste-suave);
+
+    border-radius: 999px;
+}
+
+.introduccion h2 {
+    margin: 0 0 1.5rem;
+
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+
+    letter-spacing: -0.04em;
+}
+
+.introduccion p {
+    max-width: 680px;
+
+    margin: 0.8rem auto;
+
+    color: var(--texto-secundario);
+
+    font-size: 1.05rem;
+}
+
+
+/* ========================================
+   CASOS DE ESTUDIO
+======================================== */
+
+.caso {
+    margin-bottom: 9rem;
+}
+
+
+/* ========================================
+   CABECERA DE CADA CASO
+======================================== */
+
+.titulo-caso {
+    position: relative;
+
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+
+    overflow: hidden;
+
+    color: white;
+
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.titulo-caso::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -50px;
+    bottom: -80px;
+
+    border: 35px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+}
+
+.titulo-caso p {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 0 0.6rem;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.titulo-caso h2 {
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+    max-width: 800px;
+
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.titulo-caso a {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.55rem 1rem;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.titulo-caso a:hover {
+    background-color: rgba(255, 255, 255, 0.22);
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   COLOR PROPIO DE CADA BANNER
+======================================== */
+
+/* Banner del sitio: Municipalidad de La Serena */
+#sitio .titulo-caso {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255, 255, 255, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #8f0000,
+            #b50000 45%,
+            #d00000 100%
+        );
+}
+
+#sitio .titulo-caso p {
+    color: #ffd9d9;
+}
+
+/* Banner de la plataforma: GitHub */
+#plataforma .titulo-caso {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255, 255, 255, 0.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #003e8a,
+            #0059c9 45%,
+            #0a7cff 100%
+        );
+}
+
+#plataforma .titulo-caso p {
+    color: #cfe5ff;
+}
+
+/* ========================================
+   CAPTURAS
+======================================== */
+
+.captura {
+    margin: 0 0 4rem;
+
+    padding: 1rem;
+
+    background-color: white;
+
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+
+    box-shadow: var(--sombra);
+}
+
+.captura img {
+    width: 100%;
+
+    border-radius: 12px;
+}
+
+figcaption {
+    margin-top: 0.9rem;
+    padding: 0 0.4rem;
+
+    font-size: 0.85rem;
+
+    color: var(--texto-secundario);
+}
+
+
+/* ========================================
+   PREGUNTAS
+======================================== */
+
+.pregunta {
+    position: relative;
+
+    margin-bottom: 2rem;
+    padding: 2.6rem;
+
+    background-color: var(--fondo-claro);
+
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+
+    box-shadow: var(--sombra);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.pregunta:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--sombra-hover);
+}
+
+.pregunta h3 {
+    position: relative;
+
+    max-width: 850px;
+
+    margin: 0 0 1.7rem;
+
+    padding-left: 1.2rem;
+
+    font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+    line-height: 1.35;
+
+    letter-spacing: -0.02em;
+}
+
+.pregunta h3::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0.15em;
+    bottom: 0.15em;
+
+    width: 4px;
+
+    background-color: var(--celeste);
+
+    border-radius: 99px;
+}
+
+.pregunta p {
+    max-width: 780px;
+
+    margin: 0 0 1rem;
+
+    color: #475467;
+}
+
+.pregunta p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   DIAGRAMAS
+======================================== */
+
+.diagrama {
+    display: grid;
+    gap: 0.8rem;
+
+    margin: 2.5rem 0 0;
+    padding: 1.5rem;
+
+    background-color: #f8fafc;
+
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+}
+
+.diagrama > p {
+    margin: 0;
+    padding: 1rem;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    color: var(--azul-oscuro);
+
+    background-color: white;
+
+    border: 1px solid var(--borde);
+    border-radius: var(--radio-pequeno);
+}
+
+
+/* ========================================
+   COLUMNAS DE LOS DIAGRAMAS
+======================================== */
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0.8rem;
+}
+
+.columnas p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100px;
+
+    margin: 0;
+    padding: 1.3rem;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    color: var(--azul);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--celeste-suave),
+            white
+        );
+
+    border: 1px solid #cce9fb;
+    border-radius: var(--radio-pequeno);
+}
+
+
+/* ========================================
+   DIFERENCIA ESPECIAL PARA GITHUB
+======================================== */
+
+#plataforma .columnas {
+    grid-template-columns: 2fr 1fr;
+}
+
+
+/* ========================================
+   COMPARACIÓN DE PANTALLAS
+======================================== */
+
+.comparacion-pantallas {
+    display: grid;
+
+    grid-template-columns: 2fr 0.75fr;
+
+    gap: 2rem;
+
+    margin-top: 2.5rem;
+
+    align-items: start;
+}
+
+.comparacion-pantallas figure {
+    margin: 0;
+
+    padding: 0.8rem;
+
+    background-color: #f8fafc;
+
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+}
+
+.comparacion-pantallas img {
+    width: 100%;
+
+    border-radius: 9px;
+}
+
+.comparacion-pantallas figcaption {
+    padding: 0.3rem 0.1rem 0;
+}
+
+
+/* ========================================
+   COMPARACIÓN FINAL
+======================================== */
+
+.comparacion {
+    margin-bottom: 8rem;
+
+    padding: 3rem;
+
+    background-color: white;
+
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+
+    box-shadow: var(--sombra);
+}
+
+.comparacion h2 {
+    margin: 0 0 1rem;
+
+    font-size: clamp(2rem, 5vw, 3.2rem);
+
+    letter-spacing: -0.04em;
+}
+
+.comparacion > p {
+    max-width: 760px;
+
+    color: var(--texto-secundario);
+}
+
+
+/* ========================================
+   TABLA
+======================================== */
+
+table {
+    width: 100%;
+
+    margin: 3rem 0;
+
+    overflow: hidden;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background-color: white;
+
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+}
+
+th,
+td {
+    padding: 1.2rem 1.3rem;
+
+    text-align: left;
+
+    border-bottom: 1px solid var(--borde);
+}
+
+thead {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul-oscuro),
+            var(--azul)
+        );
+}
+
+thead th {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+}
+
+tbody th {
+    width: 24%;
+
+    color: var(--azul);
+
+    background-color: #f8fafc;
+}
+
+tbody td {
+    color: #475467;
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: var(--celeste-suave);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.pie-pagina {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 4rem 2rem;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul-oscuro),
+            #06182c
+        );
+}
+
+.pie-pagina::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: -220px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: 50px solid rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+}
+
+.pie-pagina p {
+    position: relative;
+
+    margin: 0.25rem 0;
+}
+
+.pie-pagina p:first-child {
+    font-weight: 600;
+}
+
+.pie-pagina p:last-child {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .encabezado {
+        min-height: 360px;
+    }
+
+    .pregunta {
+        padding: 2rem;
+    }
+
+    .comparacion-pantallas {
+        grid-template-columns: 1.5fr 0.8fr;
+    }
+
+}
+
+
+/* ========================================
+   RESPONSIVE - MÓVIL
+======================================== */
+
+@media (max-width: 700px) {
+
+    html {
+        scroll-padding-top: 75px;
+    }
+
+
+    /* Encabezado */
+
+    .encabezado {
+        min-height: 340px;
+
+        padding: 4rem 1.5rem;
+    }
+
+    .encabezado h1 {
+        font-size: 3.3rem;
+    }
+
+
+    /* Navegación */
+
+    .navegacion {
+        justify-content: flex-start;
+
+        gap: 0.3rem;
+
+        padding: 0.7rem 1rem;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+    }
+
+    .navegacion::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navegacion a {
+        flex: 0 0 auto;
+
+        padding: 0.5rem 0.8rem;
+    }
+
+
+    /* Contenido */
+
+    main {
+        width: 90%;
+    }
+
+
+    /* Introducción */
+
+    .introduccion {
+        margin: 5rem auto;
+    }
+
+
+    /* Casos */
+
+    .caso {
+        margin-bottom: 6rem;
+    }
+
+
+    /* Títulos */
+
+    .titulo-caso {
+        padding: 2rem 1.5rem;
+    }
+
+    .titulo-caso h2 {
+        font-size: 2.1rem;
+    }
+
+
+    /* Preguntas */
+
+    .pregunta {
+        padding: 1.6rem;
+    }
+
+    .pregunta h3 {
+        padding-left: 1rem;
+    }
+
+
+    /* Diagramas */
+
+    .diagrama {
+        padding: 1rem;
+    }
+
+    .columnas,
+    #plataforma .columnas {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Comparación de pantallas */
+
+    .comparacion-pantallas {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Comparación final */
+
+    .comparacion {
+        padding: 1.6rem;
+    }
+
+
+    /* Tabla */
+
+    .comparacion {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 0.9rem;
+    }
+
+}
+
+
+/* ========================================
+   MÓVILES PEQUEÑOS
+======================================== */
+
+@media (max-width: 430px) {
+
+    .encabezado h1 {
+        font-size: 2.8rem;
+    }
+
+    .introduccion h2,
+    .comparacion h2 {
+        font-size: 2rem;
+    }
+
+    .titulo-caso h2 {
+        font-size: 1.8rem;
+    }
+
+    .pregunta h3 {
+        font-size: 1.15rem;
+    }
+
+}
